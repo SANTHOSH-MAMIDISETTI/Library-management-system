@@ -1,5 +1,7 @@
 import java.util.Scanner;
+
 public class Main {
+    static int b;
    static Scanner sc = new Scanner(System.in);
    static String garuda = "\033[0;1m"+"\u001B[33m" + "Garuda Library: " + "\u001B[0m" ;
     public static void Newuser(){
@@ -10,17 +12,27 @@ public class Main {
         int newuser = sc.nextInt();
         switch (newuser){
             case 1 :
+                Random.random();
                 System.out.println("Type your Name: ");
-                String name = sc.next();
+                String name = sc.nextLine();
+                System.out.println("Type your Phone Number: ");
+                String Phone_Number = sc.nextLine();
                 System.out.println("Welcome "+name+",\nAccount on your Name is created Temporarily (For 24Hours)\n");
+                System.out.println("Your ID is "+ Random.b);
                 break;
 
             case 2 :
+                Random.random();
                 System.out.println("Username: ");
-                String username = sc.next();
+                String username = sc.nextLine();
                 System.out.println("Password: ");
-                String password = sc.next();
+                String password = sc.nextLine();
+                System.out.println("Age: ");
+                int age = sc.nextInt();
+                System.out.println("Address: ");
+                String address = sc.nextLine();
                 System.out.println("Account on "+username+" has been created successfully...");
+                System.out.println("Your ID is "+ Random.b);
                 break;
 
             case 3 :
