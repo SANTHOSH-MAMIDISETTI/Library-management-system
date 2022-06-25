@@ -1,4 +1,6 @@
  class Take_Membership extends Main {
+    static String garuda = "\033[0;1m"+"\u001B[33m" + "Garuda Library  " + "\u001B[0m" ;
+
     public static void Takemembership(){
 
         String ignore = sc.nextLine();
@@ -8,8 +10,10 @@
         String Password_Membershipcard= sc.nextLine();
         System.out.println("Type out the date of issue (dd - mm - yyyy ): ");
         String date = sc.nextLine();
-        System.out.println("Your memebership will be expired after 30 days");
-        System.out.println("\nPay 65/- to librarian and collect physical membership card");
+        System.out.println("Enter your Age: ");
+        int age = sc.nextInt();
+        System.out.println("Your memebership will expire after 30 days");
+        System.out.println("\033[0;1m"+"\nPay 65/- to librarian and collect physical membership card");
 
 /*
 ------------------------------------------------------------------------------------------------------------
