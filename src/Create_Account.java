@@ -1,11 +1,13 @@
+import java.io.*;
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Map;
 import java.util.Scanner;
 
 public class Create_Account extends Main{
-    static Map<String, ArrayList<String>> multiValueMap = new HashMap<String, ArrayList<String> >();
-    public static void create(){
+    static String[] array;
+    static HashMap<String, String> map = new HashMap<>();
+
+    public static void create() throws IOException {
         String ignore = sc.nextLine();
         Random.random();
         System.out.println("Username: ");
@@ -14,7 +16,6 @@ public class Create_Account extends Main{
         String password = sc.nextLine();
         System.out.println("Age: ");
         int age = sc.nextInt();
-        String Age=String.valueOf(age);
         String ignore1 = sc.nextLine();
         System.out.println("Address: ");
         String address = sc.nextLine();
@@ -23,18 +24,27 @@ public class Create_Account extends Main{
         String ID = String.valueOf(Random.b);
         String Username = username;
 
-        multiValueMap.put(username, new ArrayList<String>());
-        multiValueMap.get(username).add(Username);
-        multiValueMap.get(username).add(password);
-        Map<String, ArrayList<String>> multiValueMap1 = new HashMap<String, ArrayList<String> >();
-        multiValueMap1.put(username, new ArrayList<String>());
-        multiValueMap1.get(username).add(Username);
-        multiValueMap1.get(username).add(ID);
-        multiValueMap1.get(username).add(Age);
-        multiValueMap1.get(username).add(address);
-        System.out.println(multiValueMap.keySet());
-        System.out.println(multiValueMap.get(username));
-        System.out.println(multiValueMap1.get(username));
+        FileWriter file1 = new FileWriter("USERNAME.txt",true);
+        BufferedWriter file2 = new BufferedWriter(file1);
+        PrintWriter file3 = new PrintWriter(file2);
+        file3.println(username+","+password+","+ID+","+age+","+address);
+        file3.close();
+        FileReader file11 = new FileReader("USERNAME.txt");
+        BufferedReader file22 = new BufferedReader(file11);
+        String line;
+        while((line=file22.readLine())!=null){
+           array = line.split(",",5);
+
+
+            map.put(array[0],array[1] );
+            System.out.println(map);
+
+
+        }
+        Mainpage.mainpage();
+
+
+
     }
 
 }

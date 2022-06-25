@@ -1,5 +1,7 @@
+import java.io.IOException;
+
 class Newuser extends Main{
-    public static void newuser(){
+    public static void newuser() throws IOException {
         System.out.println("Welcome to Garuda Library ");
         System.out.println("[1] Guest Reader \n[2] Create Account \n[3] Take Membership \n[4] Back \n[5] Exit");
         int newuser = sc.nextInt();
