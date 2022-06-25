@@ -5,9 +5,9 @@ class Mainpage extends Main{
     public static void mainpage() throws IOException {
 
         System.out.println("\033[0;1m"+"\u001B[33m" + "                                            LIBRARY MANAGEMENT SYSTEM (LMS) " + "\u001B[0m"+"\n");
-        System.out.println("\033[0;1m"+"\u001B[44m"+ "\u001B[30m"+"Garuda Library: " + "\u001B[0m"+"\n");
-
-        System.out.println("[1] New User \n[2] Login User \n[3] Logout \n[4] Librarian Login");
+        System.out.println("\033[0;1m"+"\u001B[44m"+ "\u001B[30m"+"Garuda Library: " + "\u001B[0m"+"\n\n");
+        Current_dateTime.current_dateTime();
+        System.out.println("\n[1] New User \n[2] Login User \n[3] Logout \n[4] Librarian Login");
         int login = sc.nextInt();
 
         switch (login){
