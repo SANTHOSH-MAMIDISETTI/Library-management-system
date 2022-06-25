@@ -16,16 +16,7 @@
                 break;
 
             case 2 :
-                System.out.println("Your Library Username: ");
-                String libraryusername = sc.next();
-                System.out.println("Password: ");
-                String librarypassword = sc.next();
-                //
-                //
-                //
-                //
-                //
-
+                Login.login();
                 break;
 
             case 3 :
