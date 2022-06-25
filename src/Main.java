@@ -1,7 +1,8 @@
 import java.util.Scanner;
 public class Main {
-   static Scanner sc = new Scanner(System.in);
-   static String garuda = "\033[0;1m"+"\u001B[33m" + "Garuda Library: " + "\u001B[0m" ;
+    static int b;
+    static Scanner sc = new Scanner(System.in);
+    static String garuda = "\033[0;1m"+"\u001B[33m" + "Garuda Library: " + "\u001B[0m" ;
     public static void Newuser(){
 
         System.out.println("Welcome to Garuda Library ");
@@ -10,17 +11,11 @@ public class Main {
         int newuser = sc.nextInt();
         switch (newuser){
             case 1 :
-                System.out.println("Type your Name: ");
-                String name = sc.next();
-                System.out.println("Welcome "+name+",\nAccount on your Name is created Temporarily (For 24Hours)\n");
+                Guest_Reader.guestreader();
                 break;
 
             case 2 :
-                System.out.println("Username: ");
-                String username = sc.next();
-                System.out.println("Password: ");
-                String password = sc.next();
-                System.out.println("Account on "+username+" has been created successfully...");
+                Create_Account.createaccount();
                 break;
 
             case 3 :
