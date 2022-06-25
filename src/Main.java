@@ -24,6 +24,10 @@ public class Main {
                 String username = sc.next();
                 System.out.println("Password: ");
                 String password = sc.next();
+                System.out.println("Age: ");
+                String age = sc.next();
+                System.out.println("Address: ");
+                String address = sc.nextLine();
                 System.out.println("Account on "+username+" has been created successfully...");
                 System.out.println("Your ID is "+ Random.b);
                 break;
