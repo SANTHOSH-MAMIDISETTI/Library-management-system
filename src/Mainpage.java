@@ -1,12 +1,10 @@
  class Mainpage extends Main{
+
     public static void mainpage(){
 
-        System.out.println("\033[0;1m"+"\u001B[33m"
-                + "                                   LIBRARY MANAGEMENT SYSTEM (LMS) "
-                + "\u001B[0m");
-        System.out.println("\033[0;1m"+"\u001B[33m"
-                + "Garuda Library: "
-                + "\u001B[0m");
+        System.out.println("\033[0;1m"+"\u001B[33m" + "                                            LIBRARY MANAGEMENT SYSTEM (LMS) " + "\u001B[0m"+"\n");
+        System.out.println("\033[0;1m"+"\u001B[44m" + "\u001B[30m"+"Garuda Library: " + "\u001B[0m"+"\n");
+
         System.out.println("[1] New User \n[2] Login User \n[3] Logout \n[4] Librarian Login");
         int login = sc.nextInt();
 
@@ -24,7 +22,13 @@
                 break;
 
             case 4 :
-                Librarian_Login.Librarianlogin();
+               if(Librarian_Login.librarian_login()){
+                    Librarian.librarian();
+                }
+                else{
+                    System.out.println("Wrong Details");
+                    break;
+                }
                 break;
 
             default:

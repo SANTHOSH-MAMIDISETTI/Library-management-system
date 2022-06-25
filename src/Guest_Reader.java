@@ -10,7 +10,5 @@ public class Guest_Reader extends Main {
         String Phone_Number = sc.nextLine();
         System.out.println("Welcome " + name + ",\nAccount on your Name is created Temporarily (For 24Hours)\n");
         System.out.println("Your ID is " + Random.b);
-
     }
-
 }

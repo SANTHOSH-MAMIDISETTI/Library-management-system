@@ -1,14 +1,13 @@
 import java.util.Scanner;
-
+import java.io.*;
 public class Main {
-    public static void main(String[]args){
-       Mainpage.mainpage();
-    }
     static int b;
     static Scanner sc = new Scanner(System.in);
 
-   static String garuda = "\033[0;1m"+"\u001B[33m" + "Garuda Library: " + "\u001B[0m" ;
 
+    public static void main(String[]args){
+       Mainpage.mainpage();
+    }
 
     public static void Logout(){
         System.out.println("\033[0;1m"+"Have a Good day, Bye...");
