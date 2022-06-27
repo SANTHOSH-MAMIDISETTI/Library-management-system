@@ -4,7 +4,7 @@ public class DueDate extends Main
         {
 public static String DueDate()
         {
-        SimpleDateFormat sdf=new SimpleDateFormat("dd-MM-yyyy");
+        SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd");
         Calendar cal=Calendar.getInstance();
         cal.add(Calendar.DAY_OF_MONTH,30);
         String newDate=sdf.format(cal.getTime());

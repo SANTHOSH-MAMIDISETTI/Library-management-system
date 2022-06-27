@@ -28,7 +28,7 @@ class Take_Membership extends DueDate  {
             }catch(Exception e){
                 System.out.println("Invalid value");
             }
-        }while(!check);
+        }while(!check);~
 
         System.out.println("The date  and time of issue is : ");
         Date today = new Date();
