@@ -10,7 +10,6 @@ class Take_Membership extends Main {
     static String Password_Membershipcard;
     static String date;
     static String age;
-    static String address;
 
 
     public static void Takemembership() throws IOException {
@@ -46,17 +45,6 @@ class Take_Membership extends Main {
                 Password_Membershipcard = sc.nextLine();
                 if (Password_Membershipcard.equals("")) {
                     System.out.println("\033[0;1m" + "Enter Password to continue \n" + "\u001B[0m");
-                    pass = 0;
-                } else {
-                    pass = 1;
-                }
-            }
-            pass = 0;
-            while (numb == pass) {
-                System.out.println("Address: ");
-                 address = sc.nextLine();
-                if (address.equals("")) {
-                    System.out.println("\033[0;1m" + "Enter Address to continue \n" + "\u001B[0m");
                     pass = 0;
                 } else {
                     pass = 1;
@@ -116,7 +104,7 @@ class Take_Membership extends Main {
             FileWriter file12 = new FileWriter("Membership.txt", true);
             BufferedWriter file23 = new BufferedWriter(file12);
             PrintWriter file34 = new PrintWriter(file23);
-            file34.println(Membershipname + "," + Password_Membershipcard + "," +address+","+ date + "," + age + "," + ID);
+            file34.println(Membershipname + "," + Password_Membershipcard + "," + date + "," + age + "," + ID);
             file34.close();
             FileReader file11 = new FileReader("Membership.txt");
             BufferedReader file22 = new BufferedReader(file11);
@@ -129,7 +117,6 @@ class Take_Membership extends Main {
             PrintWriter file44 = new PrintWriter(file33);
             file44.println(array[0] + "," + array[1]);
             file44.close();
-            Mainpage.mainpage();
 
 
 

@@ -1,5 +1,3 @@
-import java.io.IOException;
-
 class Library extends Login {
         class Node{
             String data;
@@ -36,7 +34,7 @@ class Library extends Login {
             }
             System.out.println();
         }
-    public static void library() throws IOException {
+    public static void library(){
         System.out.println("\033[0;1m"+"Welcome to Garuda Library Main Page...\n"+ "\u001B[0m");
 //        System.out.println("[1] Search Books \n[2] View Book Genre \n[3] View Account \n[4] Logout ");
         Library obj = new Library();
