@@ -1,4 +1,9 @@
- class Take_Membership extends Main {
+import java.time.LocalDate;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.GregorianCalendar;
+
+class Take_Membership extends Main {
     static String garuda = "\033[0;1m"+"\u001B[33m" + "Garuda Library  " + "\u001B[0m" ;
 
     public static void Takemembership(){
@@ -8,11 +13,30 @@
         String Membershipname = sc.nextLine();
         System.out.println("Password: ");
         String Password_Membershipcard= sc.nextLine();
-        System.out.println("The date of issue is (dd - mm - yyyy ): ");
+        System.out.println("The date  and time of issue is : ");
+        Date today = new Date();
+        System.out.println(today);
+        Calendar cal = Calendar.getInstance();
+        cal.setTime(today);
         String date = java.time.LocalDate.now().toString();
-        System.out.println("Enter your Age: ");
-        int age = sc.nextInt();
-        System.out.println("Your memebership will expire after 30 days");
+        boolean check = false;
+        int age ;
+        do{
+            System.out.println("Please enter your age");
+            try{
+                age = Integer.parseInt(sc.nextLine());
+                check = true;
+                while (age < 0)
+                {
+                    System.out.println("Please enter a valid age");
+                    age = sc.nextInt();
+                }
+            }catch(Exception e){
+                System.out.println("Invalid value");
+            }
+        }while(!check);
+        System.out.println("Your membership will expire after 30 days i.e on");
+
         System.out.println("\033[0;1m"+"\nPay 65/- to librarian and collect physical membership card");
 
 /*
