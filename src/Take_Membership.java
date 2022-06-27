@@ -29,20 +29,18 @@ class Take_Membership extends DueDate  {
                 System.out.println("Invalid value");
             }
         }while(!check);
-<<<<<<< HEAD
+
         System.out.println("The date  and time of issue is : ");
         Date today = new Date();
         System.out.println(today);
         Calendar cal = Calendar.getInstance();
         cal.setTime(today);
         String date = java.time.LocalDate.now().toString();
-=======
-        System.out.println("Your membership will expire after 30 days i.e on"+DueDate.duedate());
->>>>>>> origin/main
 
+//        System.out.println("Your membership will expire after 30 days i.e on"+DueDate.dueDate());
 //        System.out.print("Your membership will expire after 30 days i.e on ");
-        DueDate.dueDate();
-        String newDate = DueDate.dueDate();
+//        DueDate.DueDate();
+        String newDate = DueDate.DueDate();
         System.out.println("\033[0;1m"+"\nPay 65/- to librarian and collect physical membership card");
 
 /*
