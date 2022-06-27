@@ -35,7 +35,7 @@ class Take_Membership extends Main {
                 System.out.println("Invalid value");
             }
         }while(!check);
-        System.out.println("Your membership will expire after 30 days i.e on");
+        System.out.println("Your membership will expire after 30 days i.e on"+DueDate.duedate());
 
         System.out.println("\033[0;1m"+"\nPay 65/- to librarian and collect physical membership card");
 
