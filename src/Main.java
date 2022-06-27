@@ -1,7 +1,13 @@
+import java.io.IOException;
 import java.util.Scanner;
-
+import java.time.format.DateTimeFormatter;
+import java.time.LocalDateTime;
 public class Main {
+    public static void main(String[]args) throws IOException {
+       Mainpage.mainpage();
+    }
     static int b;
+<<<<<<< HEAD
    static Scanner sc = new Scanner(System.in);
    static String garuda = "\033[0;1m"+"\u001B[33m" + "Garuda Library: " + "\u001B[0m" ;
     public static void Newuser(){
@@ -38,23 +44,17 @@ public class Main {
             case 3 :
                 Take_Membership.Takemembership();
                 break;
+=======
+    static Scanner sc = new Scanner(System.in);
+>>>>>>> e5de8fab8d5e255af0e279bb36106470d83533d3
 
-            case 4 :
-                    mainpage();
-                    break;
+   static String garuda = "\033[0;1m"+"\u001B[33m" + "Garuda Library: " + "\u001B[0m" ;
 
-            case 5 :
-                Logout();
-                break;
-
-            default:
-                System.out.println("Wrong entry...");
-        }
-    }
 
     public static void Logout(){
         System.out.println("\033[0;1m"+"Have a Good day, Bye...");
     }
+<<<<<<< HEAD
 
 
     public static void mainpage(){
@@ -92,4 +92,6 @@ public class Main {
     Main main = new Main();
     main.mainpage();
     }
+=======
+>>>>>>> e5de8fab8d5e255af0e279bb36106470d83533d3
 }

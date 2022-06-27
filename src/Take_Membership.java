@@ -1,4 +1,11 @@
- class Take_Membership extends Main {
+import java.time.LocalDate;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.GregorianCalendar;
+
+class Take_Membership extends DueDate  {
+    static String garuda = "\033[0;1m"+"\u001B[33m" + "Garuda Library  " + "\u001B[0m" ;
+
     public static void Takemembership(){
 
         String ignore = sc.nextLine();
@@ -6,10 +13,35 @@
         String Membershipname = sc.nextLine();
         System.out.println("Password: ");
         String Password_Membershipcard= sc.nextLine();
-        System.out.println("Type out the date of issue (dd - mm - yyyy ): ");
-        String date = sc.nextLine();
-        System.out.println("Your memebership will be expired after 30 days");
-        System.out.println("\nPay 65/- to librarian and collect physical membership card");
+        boolean check = false;
+        int age ;
+        do{
+            System.out.println("Please enter your age");
+            try{
+                age = Integer.parseInt(sc.nextLine());
+                check = true;
+                while (age < 0)
+                {
+                    System.out.println("Please enter a valid age");
+                    age = sc.nextInt();
+                }
+            }catch(Exception e){
+                System.out.println("Invalid value");
+            }
+        }while(!check);
+
+        System.out.println("The date  and time of issue is : ");
+        Date today = new Date();
+        System.out.println(today);
+        Calendar cal = Calendar.getInstance();
+        cal.setTime(today);
+        String date = java.time.LocalDate.now().toString();
+
+//        System.out.println("Your membership will expire after 30 days i.e on"+DueDate.dueDate());
+//        System.out.print("Your membership will expire after 30 days i.e on ");
+//        DueDate.DueDate();
+        String newDate = DueDate.DueDate();
+        System.out.println("\033[0;1m"+"\nPay 65/- to librarian and collect physical membership card");
 
 /*
 ------------------------------------------------------------------------------------------------------------
@@ -32,7 +64,7 @@
                 "|                                                                                                                                                                 |              \n" +
                 "|  Issued Date = "+ date+"                                                                                                                       |             \n" +
                 "|                                                                                                                                                                 |  \n" +
-                "|                               valid upto 30days from date of issue                                                                          |  \n" +
+                "|                               valid upto "+newDate+" (30days from date of issue)                                                                          |  \n" +
                 "|                                                                                                                                                                 |                  \n" +
                 "--------------------------------------------------------------------------------------------------------------");
 
