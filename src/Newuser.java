@@ -5,6 +5,7 @@ class Newuser extends Main{
         System.out.println("Welcome to Garuda Library ");
         System.out.println("[1] Guest Reader \n[2] Create Account \n[3] Take Membership \n[4] Back \n[5] Exit");
         int newuser = sc.nextInt();
+
         switch (newuser){
             case 1 :
                 Guest_Reader.Guestreader();

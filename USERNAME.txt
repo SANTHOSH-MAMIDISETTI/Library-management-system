@@ -1,2 +1,2 @@
 Neeraj,1234,2826,18,Amrita
-asd,dfas,5998,3,r
+Neeraj,1234,1230,18,Tirupati
