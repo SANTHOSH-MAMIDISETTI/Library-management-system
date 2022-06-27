@@ -7,16 +7,16 @@ public class Main {
        Mainpage.mainpage();
     }
     static int b;
-<<<<<<< HEAD
    static Scanner sc = new Scanner(System.in);
    static String garuda = "\033[0;1m"+"\u001B[33m" + "Garuda Library: " + "\u001B[0m" ;
-    public static void Newuser(){
+    public static void Newuser() throws IOException {
 
         System.out.println("Welcome to Garuda Library ");
         System.out.println("[1] Guest Reader \n[2] Create Account \n[3] Take Membership \n[4] Back \n[5] Exit");
 
         int newuser = sc.nextInt();
-        switch (newuser){
+        switch (newuser)
+        {
             case 1 :
                 Random.random();
                 System.out.println("Type your Name: ");
@@ -44,54 +44,48 @@ public class Main {
             case 3 :
                 Take_Membership.Takemembership();
                 break;
-=======
-    static Scanner sc = new Scanner(System.in);
->>>>>>> e5de8fab8d5e255af0e279bb36106470d83533d3
 
-   static String garuda = "\033[0;1m"+"\u001B[33m" + "Garuda Library: " + "\u001B[0m" ;
+//    Scanner sc = new Scanner(System.in);
 
 
-    public static void Logout(){
-        System.out.println("\033[0;1m"+"Have a Good day, Bye...");
-    }
-<<<<<<< HEAD
+//   String garuda = "\033[0;1m"+"\u001B[33m" + "Garuda Library: " + "\u001B[0m" ;
 
+//    public static void mainpage(){
+//
+//        System.out.println("\033[0;1m"+"\u001B[33m" + "                                            LIBRARY MANAGEMENT SYSTEM (LMS) " + "\u001B[0m");
+//
+//        System.out.println("\033[0;1m"+"\u001B[44m" + "\u001B[30m"+"Garuda Library: " + "\u001B[0m");
+//
+//        System.out.println("[1] New User \n[2] Login User \n[3] Logout \n[4] Librarian Login");
+//        int login = sc.nextInt();
+//
+//        switch (login){
+//            case 1 :
+//                Newuser();
+//                break;
+//
+//            case 2 :
+//                Login.login();
+//                break;
+//
+//            case 3 :
+//                Logout.logout();
+//                break;
+//
+//            case 4 :
+//                Librarian_Login.librarian_login();
+//                break;
+//
+//            default:
+//                System.out.println("Wrong entry");
+//        }
+//    }
 
-    public static void mainpage(){
+//    public static void main(String[]args){
+//    Main main = new Main();
+//    main.mainpage();
+//    }
 
-        System.out.println("\033[0;1m"+"\u001B[33m" + "                                            LIBRARY MANAGEMENT SYSTEM (LMS) " + "\u001B[0m");
-
-        System.out.println("\033[0;1m"+"\u001B[44m" + "\u001B[30m"+"Garuda Library: " + "\u001B[0m");
-
-        System.out.println("[1] New User \n[2] Login User \n[3] Logout \n[4] Librarian Login");
-        int login = sc.nextInt();
-
-        switch (login){
-            case 1 :
-                Newuser();
-                break;
-
-            case 2 :
-                Login.login();
-                break;
-
-            case 3 :
-                Logout();
-                break;
-
-            case 4 :
-                Librarian_Login.Librarianlogin();
-                break;
-
-            default:
-                System.out.println("Wrong entry");
-        }
-    }
-
-    public static void main(String[]args){
-    Main main = new Main();
-    main.mainpage();
-    }
-=======
->>>>>>> e5de8fab8d5e255af0e279bb36106470d83533d3
+}
+}
 }

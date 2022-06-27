@@ -20,7 +20,7 @@ class Mainpage extends Main{
                 break;
 
             case 3 :
-                Logout();
+                Logout.logout();
                 break;
 
             case 4 :

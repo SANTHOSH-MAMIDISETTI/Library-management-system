@@ -1,19 +1,3 @@
-<<<<<<< HEAD
- class Login extends Main {
-    public static void login(){
-        String ignore = sc.nextLine();
-        System.out.println("Your Library Username: ");
-        String libraryusername = sc.nextLine();
-        System.out.println("Password: ");
-        String librarypassword = sc.nextLine();
-        //
-        //
-        //
-        //
-        //
-    }
-}
-=======
 import java.io.IOException;
 
 public class Login extends Main{
@@ -44,4 +28,3 @@ public class Login extends Main{
         }
     }
 }
->>>>>>> e5de8fab8d5e255af0e279bb36106470d83533d3
