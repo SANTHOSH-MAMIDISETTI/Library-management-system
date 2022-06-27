@@ -8,8 +8,8 @@
         String Membershipname = sc.nextLine();
         System.out.println("Password: ");
         String Password_Membershipcard= sc.nextLine();
-        System.out.println("Type out the date of issue (dd - mm - yyyy ): ");
-        String date = sc.nextLine();
+        System.out.println("The date of issue is (dd - mm - yyyy ): ");
+        String date = java.time.LocalDate.now().toString();
         System.out.println("Enter your Age: ");
         int age = sc.nextInt();
         System.out.println("Your memebership will expire after 30 days");
