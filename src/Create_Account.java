@@ -17,20 +17,7 @@ public class Create_Account extends Main{
         System.out.println("Age: ");
         int age = 0;
         boolean check = false;
-        do{
-            System.out.println("Please enter your age");
-            try{
-                age = Integer.parseInt(sc.nextLine());
-                check = true;
-                while (age < 0)
-                {
-                    System.out.println("Please enter a valid age");
-                    age = sc.nextInt();
-                }
-            }catch(Exception e){
-                System.out.println("Invalid value");
-            }
-        }while(!check);
+        Take_Membership.getAge(check, sc.nextLine(), sc.nextInt());
 
 //        String ignore1 = sc.nextLine();
         System.out.println("Address: ");

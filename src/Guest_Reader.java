@@ -1,7 +1,11 @@
+import java.io.File;
 import java.util.Scanner;
 
-public class Guest_Reader extends Main {
-    public static void Guestreader() {
+public class Guest_Reader extends Main
+{
+    public static void Guestreader()
+    {
+        File myObj = new File("GuestDetails.txt");
         Scanner sc = new Scanner(System.in);
         Random.random();
         System.out.println("Type your Name: ");

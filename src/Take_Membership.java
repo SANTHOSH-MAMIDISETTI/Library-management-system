@@ -1,7 +1,5 @@
-import java.time.LocalDate;
 import java.util.Calendar;
 import java.util.Date;
-import java.util.GregorianCalendar;
 
 class Take_Membership extends DueDate  {
     static String garuda = "\033[0;1m"+"\u001B[33m" + "Garuda Library  " + "\u001B[0m" ;
@@ -15,20 +13,7 @@ class Take_Membership extends DueDate  {
         String Password_Membershipcard= sc.nextLine();
         boolean check = false;
         int age ;
-        do{
-            System.out.println("Please enter your age");
-            try{
-                age = Integer.parseInt(sc.nextLine());
-                check = true;
-                while (age < 0)
-                {
-                    System.out.println("Please enter a valid age");
-                    age = sc.nextInt();
-                }
-            }catch(Exception e){
-                System.out.println("Invalid value");
-            }
-        }while(!check);~
+        getAge(check, sc.nextLine(), sc.nextInt());
 
         System.out.println("The date  and time of issue is : ");
         Date today = new Date();
@@ -68,5 +53,23 @@ class Take_Membership extends DueDate  {
                 "|                                                                                                                                                                 |                  \n" +
                 "--------------------------------------------------------------------------------------------------------------");
 
+    }
+
+    public static void getAge(boolean check, String s, int i) {
+        int age;
+        do{
+            System.out.println("Please enter your age");
+            try{
+                age = Integer.parseInt(s);
+                check = true;
+                while (age < 0)
+                {
+                    System.out.println("Please enter a valid age");
+                    age = i;
+                }
+            }catch(Exception e){
+                System.out.println("Invalid value");
+            }
+        }while(!check);
     }
 }

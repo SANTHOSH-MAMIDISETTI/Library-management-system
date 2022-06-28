@@ -1,5 +1,3 @@
-import java.util.Date;
-
 public class Delete_Membership extends Main {
 
     public static void DeleteMembership()
@@ -9,6 +7,7 @@ public class Delete_Membership extends Main {
         {
             System.out.println("Your Membership is Expired");
 
+            System.out.println("Please Renew your Membership");
         }
         else
         {
