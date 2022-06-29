@@ -30,7 +30,7 @@ public class Login extends Main{
         String line;
         List l = new ArrayList();
 
-        HashMap<String, String> map = new HashMap<>();
+        HashMap<String, String> map = new HashMap<String, String>();
         String[] arr;
         while((line=file22.readLine())!=null){
             arr = line.split(",",2);

@@ -98,7 +98,7 @@ public class Create_Account extends Main{
             file34.println(array[0] + "," + array[1]);
             file34.close();
 
-            System.out.println(array[1]);
+
 
 
             Mainpage.mainpage();

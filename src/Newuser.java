@@ -24,7 +24,7 @@ class Newuser extends Main{
                 break;
 
             case 5 :
-                Logout.logout();
+                Logout();
                 break;
 
             default:

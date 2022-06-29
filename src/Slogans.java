@@ -10,5 +10,9 @@ public class Slogans extends Main {
                 "Tanno Rudrah Prachodayat॥\n";
         String slogan5 = "";
 
+
+
+
+
     }
 }

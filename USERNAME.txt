@@ -1,2 +1,2 @@
-Neeraj,1234,2826,18,Amrita
-Neeraj,1234,1230,18,Tirupati
+Sushanth,qwerty,1427,18,Hyderabad
+subbu,puku,6969,20,redlightarea
