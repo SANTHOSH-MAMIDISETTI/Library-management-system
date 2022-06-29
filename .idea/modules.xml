@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Library-management-system.iml" filepath="$PROJECT_DIR$/Library-management-system.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/LMS.iml" filepath="$PROJECT_DIR$/.idea/LMS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/testcases/testcases.iml" filepath="$PROJECT_DIR$/testcases/testcases.iml" />
     </modules>
   </component>
 </project>

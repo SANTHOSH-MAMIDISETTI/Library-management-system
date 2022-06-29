@@ -1,0 +1,36 @@
+{
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "neeraj",
+            "database": "neerajdb",
+            "username": "root",
+            "password": "12345678"
+        },
+        {
+            "mysqlOptions": {
+                "authProtocol": "default"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "neerajdb",
+            "database": "neerajdb",
+            "username": "root",
+            "password": "12345678"
+        }
+    ],
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "c:\\Users\\naidu\\Desktop\\mysql-connector-java-8.0.22.jar",
+        "c:\\Users\\naidu\\Downloads\\j-text-utils-0.3.4.jar",
+        "c:\\Users\\naidu\\Downloads\\rs2xml.jar"
+    ]
+}

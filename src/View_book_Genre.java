@@ -37,78 +37,70 @@ public class View_book_Genre extends Library {
     public static void viewbookgenre() {
         Scanner sc = new Scanner(System.in);
         View_book_Genre dList = new View_book_Genre();
-        dList.addNode(" 1. Biographies");
-        dList.addNode("2. Comics");
-        dList.addNode("3. Documentaries");
-        dList.addNode("4. Finance");
-        dList.addNode("5. General knowledge");
-        dList.addNode("6. History");
-        dList.addNode("7. Novels");
-        dList.addNode("8. Science Fiction");
-        dList.addNode("9. Subjects");
+        dList.addNode(" 1. Comics");
+        dList.addNode("2. Programming Books");
+        dList.addNode("3. Engineering Books");
+        dList.addNode("4. Best Sellers");
+        dList.addNode("5. Famous People Recommends");
+        dList.addNode("6. Science Fiction");
+        dList.addNode("7. Bohemian Literature");
+        dList.addNode("8.  Novels etc...");
         dList.display();
         System.out.println("\nSelect the number: ");
         int x = sc.nextInt();
         switch (x){
             case 1:
-                Biography();
-                break;
-            case 2:
                 Comics();
                 break;
+            case 2:
+                Programming_Books();
+                break;
             case 3:
-                Documentaries();
+                Engineering_books();
                 break;
             case 4:
-                Finance();
+                Best_Sellers();
                 break;
             case 5:
-                General_Knowledge();
+                Famous_people_recommends();
                 break;
             case 6:
-                History();
+                Science_fiction();
                 break;
             case 7:
-                Novels();
+                Bohemian_literature();
                 break;
             case 8:
-                Science_FIction();
+                Others();
                 break;
-            case 9:
-                Subjects();
-                break;
-
             default:
                 System.out.println("\033[0;1m" + "Wrong Entry.... "+ "\u001B[0m");
                 // run function again in main code
         }
     }
-    public static void Biography(){
-        System.out.println("\033[0;1m" + "Biographies: "+ "\u001B[0m");
-        ;
+    public static void Programming_Books(){
+        System.out.println("\033[0;1m" + "Programming Books: "+ "\u001B[0m");
     }
     public static void Comics(){
         System.out.println("\033[0;1m" + "Comics: "+ "\u001B[0m");
     }
-    public static void Documentaries(){
+    public static void Engineering_books(){
         System.out.println("\033[0;1m" + "Documentaries: "+ "\u001B[0m");
     }
-    public static void Finance(){
+    public static void Best_Sellers(){
         System.out.println("\033[0;1m" + "Finance: "+ "\u001B[0m");
     }
-    public static void General_Knowledge(){
+    public static void Famous_people_recommends(){
         System.out.println("\033[0;1m" + "General Knowledge: "+ "\u001B[0m");
     }
-    public static void History(){
+    public static void Science_fiction(){
         System.out.println("\033[0;1m" + "History: "+ "\u001B[0m");
     }
-    public static void Novels(){
+    public static void Bohemian_literature(){
         System.out.println("\033[0;1m" + "Novels: "+ "\u001B[0m");
     }
-    public static void Science_FIction(){
+    public static void Others(){
         System.out.println("\033[0;1m" + "Science Fiction: "+ "\u001B[0m");
     }
-    public static void Subjects(){
-        System.out.println("\033[0;1m" + "Subjects: "+ "\u001B[0m");
-    }
+
 }  
